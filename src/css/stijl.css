@@ -1,8 +1,67 @@
+html{
+	background-image: url("/img/puntjes.jpg");
+}
+
+.hallo{
+	position: absolute;
+	left: 15rem;
+	top: 15rem;
+	width: 15rem;
+	height: 15rem;
+	padding-top: 6.5rem;
+	background-color: rgb(160, 21, 83);
+	z-index: -2;
+	border-radius: 50%;
+	animation-name: bewegen;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	color: white;
+	text-align: center;
+	font-family: "helvetica neue",helvetica;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+@keyframes bewegen{
+	0%{
+		background-color: grey;
+		transform: scale(1);
+		left: -15rem;
+		top: -15rem;
+	}
+	25%{
+		background-color: rgb(160, 21, 83);
+		transform: scale(0.6);
+		left: 100rem;
+		top: 5rem;
+	}
+	50%{
+		background-color: rgb(160, 21, 83);
+		transform: scale(0.8);
+		left: 50rem;
+		top: 50rem;
+	}
+	75%{
+		background-color: rgb(160, 21, 83);
+		transform: scale(0.8);
+		left: 1rem;
+		top: 40rem;
+	}
+	100%{
+		background-color: grey;
+		transform: scale(1);
+		left: -15rem;
+		top: -15rem;
+	}
+}
+
 body {
 	width: 80vw;
 	margin: 5rem auto;
 	font-size: 2rem;
 	font-family: "helvetica neue",helvetica;
+	background:rgba(220, 190, 192, 0.9);
+	padding: 5rem;
 }
 
 header h1 a {
@@ -23,12 +82,12 @@ header nav ul li {
 }
 
 header nav ul li a {
-	color: firebrick;
+	color: grey;
 }
 
 header nav ul li a.selected {
 	color: white;
-	background-color: firebrick;
+	background-color: grey;
 }
 
 header {
@@ -39,11 +98,16 @@ main h2 {
 	font-size: 2.25rem;
 	font-weight: 600;
 	margin-bottom: 3rem;
+	background-color: grey;
+	color: white;
+	padding: 1rem;
+	border-radius: 2%;
 }
 
 main p {
 	line-height: 3rem;
 	margin-bottom: 3rem;
+	border-radius:
 }
 
 img {
@@ -59,10 +123,24 @@ main h3 {
 	font-size: 2.25rem;
 	font-weight: 600;
 	margin-bottom: 3rem;
+	color: grey;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 2%;
+	display: block;
+}
+
+h4{
+	background-color: grey;
+	color: white;
+	display: inline-block;
+	padding: 0.5rem;
+	border-radius: 2%;
+	margin-bottom: 3rem;
 }
 
 main ul.blog li a {
-	color: firebrick;
+	color: rgb(160, 21, 83);
 }
 
 main ul.blog li {
@@ -73,7 +151,15 @@ main {
 	margin-bottom: 5rem;
 }
 
-@media (min-width: 800px) {
+footer{
+	color: grey;
+}
+
+@media (min-width: 900px) {
+	header nav{
+		padding: 5rem;
+	}
+
 	header nav ul {
 		display: flex;
 		flex-direction: row;

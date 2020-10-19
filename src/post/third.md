@@ -1,11 +1,11 @@
 ---
-title: Lorem ipsum dolor sit amet
-description: This is a post on My Blog about agile frameworks.
+title: Third post
+description: In this post...
 date: 2020-09-10
 tags:
   - tag1
   - tag2
-categories: categorie2
+categories: Lorem Ipsum
 layout: 'layouts/post.html'
 ---
 

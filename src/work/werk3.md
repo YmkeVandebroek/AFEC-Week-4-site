@@ -1,7 +1,7 @@
 ---
-title: 'Blabla1'
+title: 'Blabla3'
 summary: 'Kortere beschrijving van mijn meesterwerk'
-image: '/img/blabla1.jpg'
+image: '/img/blabla3.jpg'
 displayOrder: 1
 featured: true
 layout: 'layouts/work.html'

@@ -11,6 +11,7 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
 
 {% for item in collections.featuredWork %}
   <a href="{{ item.url }}">
+    <h4>{{ item.data.title }}</h3>
     <img src="{{ item.data.image }}" alt="{{ item.data.summary }}"/>
   </a>
 {% endfor %}
